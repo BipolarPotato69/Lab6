@@ -14,7 +14,10 @@ def get_words(f: str, letters: List[str]) -> List[str]:
     """
     Reads the file f. Checks the words with rules and returns a list of words.
     """
-    pass
+    with open(f, 'r') as file:
+        wordlist = file.read()
+    
+    return wordlist
 
 
 
